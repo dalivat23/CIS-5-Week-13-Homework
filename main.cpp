@@ -21,8 +21,8 @@ std::string initials(const std::string& first, const std::string& last) {
     {
       out = out + last[0];
     }  
-  // TODO: if first.size() > 0, add first[0] to out
-  // TODO: if last.size() > 0, add last[0] to out
+  // DONE: if first.size() > 0, add first[0] to out
+  // DONE: if last.size() > 0, add last[0] to out
   return out;
 }
 
