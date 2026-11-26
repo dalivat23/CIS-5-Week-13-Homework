@@ -24,10 +24,14 @@ int main() {
   std::cin >> last;
 
   std::string full = first + " " + last;
-  std::cout << banner(full);
+  std::cout << banner(full) << std::endl;
   
   // DONE: print banner(full)
+
+  std::cout << "Length: " << full.size() << std::endl;
   // TODO: print "Length: " and full.size()
+
+  
   // TODO: print "Initials: " and initials(first, last)
   return 0;
 }
