@@ -11,6 +11,16 @@ std::string banner(const std::string& name) {
 
 std::string initials(const std::string& first, const std::string& last) {
   std::string out = "";
+
+  if (first.size() > 0)
+    {
+      out = first[0] + out;
+    }
+  
+  if (last.size() > 0)
+    {
+      out = out + last[0];
+    }  
   // TODO: if first.size() > 0, add first[0] to out
   // TODO: if last.size() > 0, add last[0] to out
   return out;
@@ -29,9 +39,9 @@ int main() {
   // DONE: print banner(full)
 
   std::cout << "Length: " << full.size() << std::endl;
-  // TODO: print "Length: " and full.size()
+  // DONE: print "Length: " and full.size()
 
-  
-  // TODO: print "Initials: " and initials(first, last)
+  std::cout << "Initials: " << initials(first, last) << std::endl;
+  // DONE: print "Initials: " and initials(first, last)
   return 0;
 }
