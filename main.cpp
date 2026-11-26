@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string>
 
-// Practice 13 · Part 1 — Your Name
+// Practice 13 · Part 1 — Tristan Daliva
 // CIS 5 Week 13 · Word tools
 
 std::string banner(const std::string& name) {
   // TODO: return "Hello, " + name + "!"
-  return name;
+  return "Hello, " + name + "!";
 }
 
 std::string initials(const std::string& first, const std::string& last) {
@@ -24,7 +24,9 @@ int main() {
   std::cin >> last;
 
   std::string full = first + " " + last;
-  // TODO: print banner(full)
+  std::cout << banner(full);
+  
+  // DONE: print banner(full)
   // TODO: print "Length: " and full.size()
   // TODO: print "Initials: " and initials(first, last)
   return 0;
